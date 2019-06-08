@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <script>
+      var ID_ = document.URL.split('?')[1];
+      var email_db = 'yearbook@gmail.com';
+      const check_in_mail = 'mailto:'+email_db+'?subject=IN '+ID_;
+      const check_out_mail = 'mailto:'+email_db+'?subject=OUT '+ID_;
+      console.log(check_in_mail);
+      console.log(check_out_mail);
+      var check_outb;
+    </script>
+    <style>
+      #check_out{
+        width: 100%;
+        background: red;
+        padding-bottom:50px;
+        padding-top: 50px;
+      }
+      #check_in{
+        width: 100%;
+        background: blue;
+        padding-bottom:50px;
+        padding-top: 50px;
+      }
+    </style>
+  </header>
+  <body>
+    <button onclick='window.open(check_out_mail)' id='check_out' align=center>Check Out</div>
+    <button onclick='window.open(check_in_mail)' id='check_in' align=center>Check In</div>
+  </body>
+</html>
