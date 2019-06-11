@@ -6,6 +6,8 @@
       var email_db = 'yearbook@gmail.com';
       const check_in_mail = 'mailto:'+email_db+'?subject=IN '+ID_;
       const check_out_mail = 'mailto:'+email_db+'?subject=OUT '+ID_;
+      const check_in_another = 'https://alexdvorak.github.io/check_out_another.html';
+      const check_out_another = 'https://alexdvorak.github.io/check_out_another.html';
       console.log(check_in_mail);
       console.log(check_out_mail);
       var check_outb;
@@ -32,5 +34,7 @@
   <body>
     <button onclick='window.open(check_out_mail)' id='check_out' align=center>Check Out</div>
     <button onclick='window.open(check_in_mail)' id='check_in' align=center>Check In</div>
+    <button onclick='window.open(check_out_another)' id='check_out_another' align=center>Check Out</div>
+    <button onclick='window.open(check_in_another)' id='check_in_another' align=center>Check In</div>
   </body>
 </html>
